@@ -1,0 +1,6 @@
+build/*
+*.html
+README.md
+node_modules
+public
+*.xlsx
