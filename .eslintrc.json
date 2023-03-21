@@ -1,11 +1,16 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
-        "plugin:react/recommended",
-        "airbnb"
+        "react-app",
+        "react-app/jest",
+        "airbnb",
+        "plugin:import/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:prettier/recommended"
     ],
     "overrides": [
     ],
@@ -14,8 +19,13 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
+        "react/jsx-uses-react": ["off"],
+        "react/react-in-jsx-scope": ["off"],
+        "react/jsx-props-no-spreading": ["warn"],
+        "no-shadow": "off"
     }
 }
