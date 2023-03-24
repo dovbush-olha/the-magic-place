@@ -10,9 +10,13 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepare": "husky install",
-    "prettier": "prettier --write ./src"
+    "prettier": "prettier --write ./src",
+    "test": "vitest"
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
     "@vitejs/plugin-react": "^3.1.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -35,6 +39,8 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.0",
-    "prettier": "2.8.6"
+    "jsdom": "^21.1.1",
+    "prettier": "2.8.6",
+    "vitest": "^0.29.7"
   }
 }
