@@ -11,7 +11,7 @@
     "lint:fix": "eslint --fix .",
     "prepare": "husky install",
     "prettier": "prettier --write ./src",
-    "test": "vitest"
+    "test": "vitest --coverage"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -30,6 +30,7 @@
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "@vitest/coverage-c8": "^0.29.7",
     "eslint": "^8.36.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.8.0",
