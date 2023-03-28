@@ -3,6 +3,6 @@ import App from './App';
 
 test('render The Magic Place text', () => {
   render(<App />);
-  const text = screen.getByText(/the magic place/i);
+  const text = screen.getByText('The Magic Place');
   expect(text).toBeInTheDocument();
 });
