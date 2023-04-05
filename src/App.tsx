@@ -1,8 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
-import DormsPage from './pages/DormsPage/DormsPage';
-import HomePage from './pages/HomePage/HomePage';
-import InvestigationPage from './pages/InvestigatePage/InvestigationPage';
-import SupportPage from './pages/SupportPage/SupportPage';
+import AuthPage from './pages/AuthPage/AuthPage';
+import HomesPage from './pages/HomesPage/HomesPage';
+import MainPage from './pages/MainPage/MainPage';
+import ProfilePage from './pages/ProfilePage/ProfilePage';
+import ResearchPage from './pages/ResearchPage/ResearchPage';
+import SettingsPage from './pages/SettingsPage/SettingsPage';
+import SpellsPage from './pages/SpellsPage/SpellsPage';
+import Footer from './UI/Footer';
 import Header from './UI/Header';
 
 function App() {
@@ -10,12 +14,16 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/dorms" element={<DormsPage />} />
-        <Route path="/investigate" element={<InvestigationPage />} />
-        <Route path="/support" element={<SupportPage />} />
-        <Route path="*" element={<HomePage />} />
+        <Route path="/" element={<MainPage />} />
+        <Route path="/research" element={<ResearchPage />} />
+        <Route path="/homes" element={<HomesPage />} />
+        <Route path="/spells" element={<SpellsPage />} />
+        <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/auth" element={<AuthPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="*" element={<MainPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
