@@ -7,5 +7,5 @@ export interface WandsI {
 export interface FetchedWandsI {
   wands: WandsI[] | undefined;
   isLoading: boolean;
-  isError: Error;
+  error: Error | undefined;
 }

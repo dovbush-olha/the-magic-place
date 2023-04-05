@@ -8,5 +8,5 @@ export interface SpeciesI {
 export interface FetchedSpeciesI {
   species: SpeciesI[] | undefined;
   isLoading: boolean;
-  isError: Error;
+  error: Error | undefined;
 }

@@ -8,5 +8,5 @@ export interface CharacterI {
 export interface FetchedCharactersI {
   characters: CharacterI[] | undefined;
   isLoading: boolean;
-  isError: Error;
+  error: Error | undefined;
 }

@@ -8,5 +8,5 @@ export interface BooksI {
 export interface FetchedBooksI {
   books: BooksI[] | undefined;
   isLoading: boolean;
-  isError: Error;
+  error: Error | undefined;
 }

@@ -8,5 +8,5 @@ export interface HouseI {
 export interface FetchedHousesI {
   houses: HouseI[] | undefined;
   isLoading: boolean;
-  isError: Error;
+  error: Error | undefined;
 }
