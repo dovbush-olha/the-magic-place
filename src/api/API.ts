@@ -1,16 +1,17 @@
 import axios from 'axios';
 import useSWR from 'swr';
-import { FetchedCharactersType } from '../dto/CharacterType';
-import { FetchedHousesType } from '../dto/HouseTypes';
-import { FetchedSpeciesType } from '../dto/SpeciesType';
-import { FetchedWandsType } from '../dto/WandsType';
+import { FetchedCharactersI, CharacterI } from '../dto/CharacterType';
+import { FetchedHousesI, HouseI } from '../dto/HouseTypes';
+import { FetchedSpeciesI, SpeciesI } from '../dto/SpeciesType';
+import { FetchedWandsI, WandsI } from '../dto/WandsType';
+import { FetchedBooksI, BooksI } from '../dto/BooksType';
 
 const BASE_URL = 'https://legacy--api.herokuapp.com/api/v1';
 
 const fetcher = (url: string) => axios.get(`${BASE_URL}${url}`).then((res) => res.data);
 
-export function useCharacters(currentPage = 1): FetchedCharactersType {
-  const { data, error, isLoading } = useSWR(`/characters?page=${currentPage}`, fetcher);
+export function useCharacters(currentPage = 1): FetchedCharactersI {
+  const { data, error, isLoading } = useSWR<CharacterI[] | undefined>(`/characters?page=${currentPage}`, fetcher);
   return {
     characters: data,
     isLoading,
@@ -19,8 +20,8 @@ export function useCharacters(currentPage = 1): FetchedCharactersType {
 }
 // всього 33 сторінки (655 персонажів, по 20 на кожній)
 
-export function useHouses(): FetchedHousesType {
-  const { data, error, isLoading } = useSWR('/houses', fetcher);
+export function useHouses(): FetchedHousesI {
+  const { data, error, isLoading } = useSWR<HouseI[] | undefined>('/houses', fetcher);
   return {
     houses: data,
     isLoading,
@@ -28,8 +29,8 @@ export function useHouses(): FetchedHousesType {
   };
 }
 
-export function useSpecies(currentPage = 1): FetchedSpeciesType {
-  const { data, error, isLoading } = useSWR(`/species?page=${currentPage}`, fetcher);
+export function useSpecies(currentPage = 1): FetchedSpeciesI {
+  const { data, error, isLoading } = useSWR<SpeciesI[] | undefined>(`/species?page=${currentPage}`, fetcher);
   return {
     species: data,
     isLoading,
@@ -38,8 +39,8 @@ export function useSpecies(currentPage = 1): FetchedSpeciesType {
 }
 // всього 6 сторінoк (110 тварин, по 20 на кожній)
 
-export function useWands(currentPage = 1): FetchedWandsType {
-  const { data, error, isLoading } = useSWR(`/wands?page=${currentPage}`, fetcher);
+export function useWands(currentPage = 1): FetchedWandsI {
+  const { data, error, isLoading } = useSWR<WandsI[] | undefined>(`/wands?page=${currentPage}`, fetcher);
   return {
     wands: data,
     isLoading,
@@ -48,8 +49,8 @@ export function useWands(currentPage = 1): FetchedWandsType {
 }
 // всього 5 сторінoк (84 палички, по 20 на кожній)
 
-export function useBooks() {
-  const { data, error, isLoading } = useSWR('/books', fetcher);
+export function useBooks(): FetchedBooksI {
+  const { data, error, isLoading } = useSWR<BooksI[] | undefined>('/books', fetcher);
   return {
     books: data,
     isLoading,

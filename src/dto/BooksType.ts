@@ -1,12 +1,12 @@
-export interface BooksType {
+export interface BooksI {
   id: number;
   image_url: string | null;
   release_date: string;
   title: string;
 }
 
-export interface FetchedBooksType {
-  books: BooksType[];
+export interface FetchedBooksI {
+  books: BooksI[] | undefined;
   isLoading: boolean;
   isError: Error;
 }
