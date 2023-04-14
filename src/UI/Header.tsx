@@ -8,7 +8,7 @@ function Header() {
         gap: '10px',
       }}
     >
-      <Link to="/home">Home page</Link>
+      <Link to="/home">Main page</Link>
       <Link to="/research">Research page</Link>
       <Link to="/homes">Homes page</Link>
       <Link to="/spells">Spells page</Link>

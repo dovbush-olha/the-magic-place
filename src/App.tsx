@@ -1,30 +1,83 @@
+import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import AuthPage from './pages/AuthPage/AuthPage';
-import HomesPage from './pages/HomesPage/HomesPage';
-import MainPage from './pages/MainPage/MainPage';
-import ProfilePage from './pages/ProfilePage/ProfilePage';
-import ResearchPage from './pages/ResearchPage/ResearchPage';
-import SettingsPage from './pages/SettingsPage/SettingsPage';
-import SpellsPage from './pages/SpellsPage/SpellsPage';
 import Footer from './UI/Footer';
 import Header from './UI/Header';
 
+const MainPage = lazy(() => import('./pages/MainPage/MainPage'));
+const ResearchPage = lazy(() => import('./pages/ResearchPage/ResearchPage'));
+const HomesPage = lazy(() => import('./pages/HomesPage/HomesPage'));
+const SpellsPage = lazy(() => import('./pages/SpellsPage/SpellsPage'));
+const AuthPage = lazy(() => import('./pages/AuthPage/AuthPage'));
+const ProfilePage = lazy(() => import('./pages/ProfilePage/ProfilePage'));
+const SettingsPage = lazy(() => import('./pages/SettingsPage/SettingsPage'));
+
 function App() {
   return (
-    <div>
+    <>
       <Header />
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/research" element={<ResearchPage />} />
-        <Route path="/homes" element={<HomesPage />} />
-        <Route path="/spells" element={<SpellsPage />} />
-        <Route path="/settings" element={<SettingsPage />} />
-        <Route path="/auth" element={<AuthPage />} />
-        <Route path="/profile" element={<ProfilePage />} />
-        <Route path="*" element={<MainPage />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Suspense>
+                <MainPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/research"
+            element={
+              <Suspense>
+                <ResearchPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/homes"
+            element={
+              <Suspense>
+                <HomesPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/spells"
+            element={
+              <Suspense>
+                <SpellsPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/auth"
+            element={
+              <Suspense>
+                <AuthPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              <Suspense>
+                <ProfilePage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/settings"
+            element={
+              <Suspense>
+                <SettingsPage />
+              </Suspense>
+            }
+          />
+          <Route path="*" element={<MainPage />} />
+        </Routes>
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
