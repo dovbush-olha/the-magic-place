@@ -18,7 +18,7 @@
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module",
-        "project": "./tsconfig.eslint.json"
+        "project": ["tsconfig.eslint.json"]
     },
     "plugins": [
         "react",
@@ -29,6 +29,12 @@
         "react/jsx-uses-react": ["off"],
         "react/react-in-jsx-scope": ["off"],
         "react/jsx-props-no-spreading": ["warn"],
-        "no-shadow": "off"
+        "no-shadow": "off",
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ]
     }
 }
