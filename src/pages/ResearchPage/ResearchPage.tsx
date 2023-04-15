@@ -1,5 +1,5 @@
-function ResearchPage() {
+export function ResearchPage() {
   return <p>It is research page</p>;
 }
 
-export default ResearchPage;
+// export default ResearchPage;

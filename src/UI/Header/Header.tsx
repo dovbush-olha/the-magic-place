@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function Header() {
+export function Header() {
   return (
     <header
       style={{
@@ -8,9 +8,9 @@ function Header() {
         gap: '10px',
       }}
     >
-      <Link to="/home">Main page</Link>
+      <Link to="/">Home page</Link>
       <Link to="/research">Research page</Link>
-      <Link to="/homes">Homes page</Link>
+      <Link to="/houses">Houses page</Link>
       <Link to="/spells">Spells page</Link>
       <Link to="/settings">Settings page</Link>
       <Link to="/auth">Auth page</Link>
@@ -18,5 +18,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
