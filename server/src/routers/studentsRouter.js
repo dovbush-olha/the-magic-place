@@ -1,20 +1,37 @@
 const express = require('express');
-const {
-  getStudents,
-  getStudent,
-  editStudent,
-  createStudent,
-  deleteStudent,
-} = require('../services/studentsService');
 const { authMiddleware } = require('../middleware/authMiddleware');
 
 const router = express.Router();
 
-router.get('', authMiddleware, getStudents);
-router.get('/:id', authMiddleware, getStudent);
-router.put('/edit/:id', authMiddleware, editStudent);
-router.post('/create', authMiddleware, createStudent);
-router.delete('/delete/:id', authMiddleware, deleteStudent);
+router.get(
+  '',
+  authMiddleware,
+  async (req, res) => {},
+);
+
+router.get(
+  '/:id',
+  authMiddleware,
+  async (req, res) => {},
+);
+
+router.put(
+  '/edit/:id',
+  authMiddleware,
+  async (req, res) => {},
+);
+
+router.post(
+  '/create',
+  authMiddleware,
+  async (req, res) => {},
+);
+
+router.delete(
+  '/delete/:id',
+  authMiddleware,
+  async (req, res) => {},
+);
 
 module.exports = {
   studentsRouter: router,

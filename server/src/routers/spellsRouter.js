@@ -1,20 +1,37 @@
 const express = require('express');
-const {
-  getSpells,
-  getSpell,
-  editSpell,
-  createSpell,
-  deleteSpell,
-} = require('../services/spellsService');
 const { authMiddleware } = require('../middleware/authMiddleware');
 
 const router = express.Router();
 
-router.get('', authMiddleware, getSpells);
-router.get('/:id', authMiddleware, getSpell);
-router.put('/edit/:id', authMiddleware, editSpell);
-router.post('/create', authMiddleware, createSpell);
-router.delete('/delete/:id', authMiddleware, deleteSpell);
+router.get(
+  '',
+  authMiddleware,
+  async (req, res) => {},
+);
+
+router.get(
+  '/:id',
+  authMiddleware,
+  async (req, res) => {},
+);
+
+router.put(
+  '/edit/:id',
+  authMiddleware,
+  async (req, res) => {},
+);
+
+router.post(
+  '/create',
+  authMiddleware,
+  async (req, res) => {},
+);
+
+router.delete(
+  '/delete/:id',
+  authMiddleware,
+  async (req, res) => {},
+);
 
 module.exports = {
   spellsRouter: router,
