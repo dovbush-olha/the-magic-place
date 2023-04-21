@@ -10,15 +10,13 @@ app.use(express.json());
 app.use(morgan('tiny'));
 app.use(cors());
 
-const start = async () => {
+(async () => {
   try {
     app.listen(PORT);
   } catch (err) {
     console.error(`Error on server startup: ${err.message}`);
   }
-};
-
-start();
+})();
 
 function errorHandler(err, req, res) {
   console.error(err);
