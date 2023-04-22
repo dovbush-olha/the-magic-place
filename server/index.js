@@ -25,6 +25,7 @@ app.use('/api/students', studentsRouter);
 (async () => {
   try {
     app.listen(PORT);
+    console.log(`server running at ${PORT}`);
   } catch (err) {
     console.error(`Error on server startup: ${err.message}`);
   }
