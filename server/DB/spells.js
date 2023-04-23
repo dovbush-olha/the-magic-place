@@ -1,5 +1,5 @@
 const { sequelize } = require('../libraries/mysql');
-const Spell = require("../models/Spell");
+const Spell = require("../src/models/Spell");
 
 const SPELLS_EN = [
   {

@@ -1,6 +1,6 @@
-const { sequelize, DataTypes } = require('../libraries/mysql');
+const { sequelize, DataTypes } = require('../../libraries/mysql');
 
-const Stuff = sequelize.define('Stuff', {
+const Spell = sequelize.define('Spell', {
   id: {
     type: DataTypes.SMALLINT.UNSIGNED,
     primaryKey: true,
@@ -22,11 +22,11 @@ const Stuff = sequelize.define('Stuff', {
   },
 
 }, {
-  tableName: 'stuff'
+  tableName: 'spells'
 });
 
-Stuff.beforeUpdate(stuff => {
-  stuff.updatedAt = new Date();
+Spell.beforeUpdate(spell => {
+  spell.updatedAt = new Date();
 });
 
-module.exports = Stuff;
+module.exports = Spell;
