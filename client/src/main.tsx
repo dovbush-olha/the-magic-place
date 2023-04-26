@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Root } from './Root';
 import { HomePage } from './pages/HomePage';
+import GlobalStyle from './globalStyles';
 
 const routes = createBrowserRouter([
   {
@@ -70,6 +71,7 @@ const routes = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
+    <GlobalStyle />
     <RouterProvider router={routes} />
   </React.StrictMode>
 );
