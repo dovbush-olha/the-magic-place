@@ -1,0 +1,21 @@
+node_modules
+*.local
+
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# testing
+/coverage
+
+# production
+/build
+
+# env file
+.env
