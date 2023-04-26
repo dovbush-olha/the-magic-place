@@ -14,11 +14,11 @@
     "lint:staged": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.+(ts,tsx)": [
+    "src": [
       "eslint --fix",
       "tsc-files --noEmit"
     ],
-    "src/**/*.{ts,tsx,json,md}": [
+    "src": [
       "prettier --write"
     ]
   },
