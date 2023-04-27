@@ -234,7 +234,7 @@ export const ProfessorsUA: Professor[] = [
   {
     name: 'Сивіла Трелоні',
     subject: 'Віщування',
-    workPeriod: '1980s-1998',
+    workPeriod: '1980-ті-1998',
     interestingFact: 'Напророчила народження обраного - Гаррі Поттера.',
     portrait: '',
     description: 'Ексцентрична та драматична, обдарований провидець та ясновидець.',
@@ -242,7 +242,7 @@ export const ProfessorsUA: Professor[] = [
   {
     name: 'Горацій Слизоріг',
     subject: 'Зіллєваріння',
-    workPeriod: '1930s-1981, 1996-1997',
+    workPeriod: '1930-ті-1981, 1996-1997',
     interestingFact:
       'Відомий тим, що збирав студентів, які виявляли винятковий талант та потенціал у свій «Слизоклуб».',
     portrait: '',
@@ -250,8 +250,8 @@ export const ProfessorsUA: Professor[] = [
   },
   {
     name: 'Помона Спраут',
-    subject: 'Гербологія',
-    workPeriod: '1970s-1998',
+    subject: 'Гербалогія',
+    workPeriod: '1970-ті-1998',
     interestingFact: 'Одного разу вона виростила отруйне щупальце від розсади до дорослої особини.',
     portrait: '',
     description: 'Професор гербології та голова Хаффлпаффу, відома своєю любов’ю до рослин та досвідом у гербології.',
@@ -259,7 +259,7 @@ export const ProfessorsUA: Professor[] = [
   {
     name: 'Філіус Флитвік',
     subject: 'Заклинання',
-    workPeriod: '1970s-1998',
+    workPeriod: '1970-ті-1998',
     interestingFact: 'У молодості він був чемпіоном у дуелях та досі має чудові навички бою на чарівних паличках.',
     portrait: '',
     description: 'Веселий та мініатюрний, вправний дуелянт та майстер чар.',
@@ -267,7 +267,7 @@ export const ProfessorsUA: Professor[] = [
   {
     name: 'Роланда Гуч',
     subject: 'Уроки польотів',
-    workPeriod: 'pre-1991, 1996-1998',
+    workPeriod: 'до 1991, 1996-1998',
     interestingFact: 'Вона була всесвітньо відомим гравцем в квідич та суддею.',
     portrait: '',
     description: 'Серйозна та досвідчена, легендарний гравець у квідич та арбітр.',
@@ -283,7 +283,7 @@ export const ProfessorsUA: Professor[] = [
   {
     name: 'Катберт Бінс',
     subject: 'Історія магії',
-    workPeriod: 'pre-1991 - 1998',
+    workPeriod: 'до 1991 - 1998',
     interestingFact: 'Привид який продовжував викладати навіть після своєї смерті.',
     portrait: '',
     description: 'Нудний та монотонний, примарний професор історії, який безперестанку бубонить.',
@@ -291,7 +291,7 @@ export const ProfessorsUA: Professor[] = [
   {
     name: 'Аврора Сіністра',
     subject: 'Астрономія',
-    workPeriod: 'pre-1991 - 1998',
+    workPeriod: 'до 1991 - 1998',
     interestingFact: 'Захоплюється зірками та космосом.',
     portrait: '',
     description: 'Таємнича та обізнана, професор астрономії з пристрастю до небес.',
@@ -299,7 +299,7 @@ export const ProfessorsUA: Professor[] = [
   {
     name: 'Септіма Вектор',
     subject: 'Числомагія',
-    workPeriod: 'pre-1991 - 1998',
+    workPeriod: 'до 1991 - 1998',
     interestingFact:
       'Вона була експертом у нумерології та ворожінні, викладала складне мистецтво числомагії в Гоґвортсі.',
     portrait: '',
@@ -354,7 +354,7 @@ export const ProfessorsUA: Professor[] = [
   {
     name: 'Батшеда Баблінг',
     subject: 'Стародавні руни',
-    workPeriod: 'unknown',
+    workPeriod: 'невідомо',
     interestingFact: 'Вона написала повний посібник із стародавніх рун.',
     portrait: '',
     description: 'Обізнаний та шанований дослідник стародавніх рун.',
