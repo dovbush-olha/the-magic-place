@@ -17,6 +17,15 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "baseUrl": "src",
+  "paths": {
+    "ui/*": ["UI/*"],
+    "components/*": ["components/*"],
+    "modules/*": ["modules/*"],
+    "pages/*": ["pages/*"],
+    "constants/*": ["constants/*"],
+    "assets/*": ["assets/*"]
+  },
   "include": [".eslintrc.json", "src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
