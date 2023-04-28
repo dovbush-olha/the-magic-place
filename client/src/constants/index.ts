@@ -1,1 +1,1 @@
-export { BREAKPOINTS, QUERIES } from './style.constants';
+export { QUERIES, BREAKPOINTS } from './style.constants';

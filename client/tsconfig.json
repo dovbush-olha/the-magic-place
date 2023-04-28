@@ -17,14 +17,15 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "baseUrl": "src",
+  "types": ["node"],
+  "baseUrl": ".",
   "paths": {
-    "ui/*": ["UI/*"],
-    "components/*": ["components/*"],
-    "modules/*": ["modules/*"],
-    "pages/*": ["pages/*"],
-    "constants/*": ["constants/*"],
-    "assets/*": ["assets/*"]
+    "ui/*": ["src/UI/*"],
+    "components/*": ["src/components/*"],
+    "modules/*": ["src/modules/*"],
+    "pages/*": ["src/pages/*"],
+    "constants/*": ["src/constants/*"],
+    "assets/*": ["src/assets/*"]
   },
   "include": [".eslintrc.json", "src"],
   "references": [{ "path": "./tsconfig.node.json" }]
