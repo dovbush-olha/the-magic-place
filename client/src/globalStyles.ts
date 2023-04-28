@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
-import { WEIGHT } from './constants';
+import { WEIGHT, COLORS } from './constants';
 
 const GlobalStyle = createGlobalStyle`
-  
+
   html {
     --14px: 0.875rem;
     --15px: 0.9375rem;
@@ -17,20 +17,20 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     height: 100%;
   }
-  
+
   *,
   *::after,
   *::before {
     box-sizing: border-box;
- }
+  }
 
   * {
     margin: 0;
   }
-  
+
   ul {
     list-style: none;
- }
+  }
 
   ul,
   ol {
@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
   img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
- }
+  }
 
   input,
   button,
@@ -61,11 +61,12 @@ const GlobalStyle = createGlobalStyle`
   #root {
     isolation: isolate;
   }
-  
+
   body {
     font-family: 'Cormorant Garamond', serif;
     font-weight: ${WEIGHT.medium};
     -webkit-font-smoothing: antialiased;
+    background-color: ${COLORS.Background.DarkBlue};
   }
 `;
 

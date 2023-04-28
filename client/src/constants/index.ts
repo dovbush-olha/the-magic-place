@@ -1,1 +1,1 @@
-export { WEIGHT } from './style.constants';
+export { WEIGHT, COLORS } from './style.constants';
