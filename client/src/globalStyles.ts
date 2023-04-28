@@ -1,36 +1,65 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-* {
-  box-sizing: border-box;
-}
+  
+  html {
+    --14px: 0.875rem;
+    --15px: 0.9375rem;
+    --16px: 1rem;
+    --17px: 1.0625rem;
+    --18px: 1.125rem;
+    --19px: 1.1875rem;
+    --20px: 1.25rem;
+    --21px: 1.3125rem;
+  }
 
-body {
-  margin: 0;
-  line-height: 1.5;
-}
+  html, body {
+    height: 100%;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+ }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
+  * {
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+ }
 
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+  ul,
+  ol {
+    padding: 0;
+  }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}`;
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+ }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  #root {
+    isolation: isolate;
+  }
+`;
 
 export default GlobalStyle;
