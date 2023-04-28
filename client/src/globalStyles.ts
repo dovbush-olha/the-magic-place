@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { WEIGHT } from './constants';
 
 const GlobalStyle = createGlobalStyle`
   
@@ -63,6 +64,7 @@ const GlobalStyle = createGlobalStyle`
   
   body {
     font-family: 'Cormorant Garamond', serif;
+    font-weight: ${WEIGHT.medium};
     -webkit-font-smoothing: antialiased;
   }
 `;
