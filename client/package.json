@@ -15,11 +15,8 @@
   },
   "lint-staged": {
     "*": [
-      "eslint --fix",
-      "tsc-files --noEmit"
-    ],
-    "*": [
-      "prettier --write"
+      "eslint --fix .",
+      "prettier --write ."
     ]
   },
   "dependencies": {
