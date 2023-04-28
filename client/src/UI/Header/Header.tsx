@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
+import * as Styled from './Header.style';
 
 export function Header() {
   return (
-    <header
+    <Styled.Wrapper
       style={{
         display: 'flex',
         gap: '10px',
@@ -15,6 +16,6 @@ export function Header() {
       <Link to="/settings">Settings page</Link>
       <Link to="/auth">Auth page</Link>
       <Link to="/profile">Profile page</Link>
-    </header>
+    </Styled.Wrapper>
   );
 }
