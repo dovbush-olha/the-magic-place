@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { WEIGHT, COLORS } from './constants';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 
   html {
     --14px: 0.875rem;
@@ -60,6 +60,7 @@ const GlobalStyle = createGlobalStyle`
 
   #root {
     isolation: isolate;
+    height: 100%;
   }
 
   body {
@@ -67,7 +68,6 @@ const GlobalStyle = createGlobalStyle`
     font-weight: ${WEIGHT.medium};
     -webkit-font-smoothing: antialiased;
     background-color: ${COLORS.Background.DarkBlue};
+    color: ${COLORS.Main.Beige_100};
   }
 `;
-
-export default GlobalStyle;
