@@ -60,6 +60,11 @@ const GlobalStyle = createGlobalStyle`
   #root {
     isolation: isolate;
   }
+  
+  body {
+    font-family: 'Cormorant Garamond', serif;
+    -webkit-font-smoothing: antialiased;
+  }
 `;
 
 export default GlobalStyle;
