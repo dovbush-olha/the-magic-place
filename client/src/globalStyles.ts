@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import BGImage from './assets/images/background-image.jpg';
 import { WEIGHT, COLORS } from './constants';
 
 export const GlobalStyle = createGlobalStyle`
@@ -71,8 +70,5 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     background-color: ${COLORS.Background.DarkBlue};
     color: ${COLORS.Main.Beige_100};
-    background-image: url(${BGImage});
-    background-repeat: no-repeat;
-    background-position: center top;
   }
 `;

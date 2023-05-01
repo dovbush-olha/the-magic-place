@@ -1,3 +1,5 @@
+import * as Styled from './HomePage.style';
+
 export function HomePage() {
-  return <p>It is home page</p>;
+  return <Styled.Wrapper>It is home page</Styled.Wrapper>;
 }
