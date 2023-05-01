@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components/macro';
-import { Header, Footer } from './UI';
+import { Header, Footer } from './ui';
 
 const Wrapper = styled.div`
   display: flex;
