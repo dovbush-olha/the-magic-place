@@ -4,6 +4,4 @@ const spellSchema = mongoose.Schema();
 
 const Spell = mongoose.model('spells', spellSchema);
 
-module.exports = {
-  Spell,
-};
+module.exports = Spell;

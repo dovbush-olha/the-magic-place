@@ -4,6 +4,4 @@ const houseSchema = mongoose.Schema();
 
 const House = mongoose.model('houses', houseSchema);
 
-module.exports = {
-  House,
-};
+module.exports = House;

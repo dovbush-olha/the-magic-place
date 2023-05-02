@@ -4,6 +4,4 @@ const studentSchema = mongoose.Schema();
 
 const Student = mongoose.model('students', studentSchema);
 
-module.exports = {
-  Student,
-};
+module.exports = Student;
