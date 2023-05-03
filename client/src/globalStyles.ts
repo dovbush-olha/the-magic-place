@@ -61,6 +61,7 @@ export const GlobalStyle = createGlobalStyle`
   #root {
     isolation: isolate;
     height: 100%;
+    height: 2000px;
   }
 
   body {
