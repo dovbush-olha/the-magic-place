@@ -1,9 +1,13 @@
 {
   "scripts": {
     "prepare": "husky install",
-    "lint": "cd client && npm run lint:staged"
+    "lint": "cd client && npm run lint:staged",
+    "server": "npm run start --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "devDependencies": {
+    "concurrently": "^8.0.1",
     "husky": "^8.0.3"
   }
 }

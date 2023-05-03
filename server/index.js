@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const mongoose = require('mongoose');
 const config = require('config');
 const cors = require('cors');
 
@@ -11,6 +12,8 @@ const { studentsRouter } = require('./src/routers/studentsRouter');
 
 const app = express();
 const PORT = process.env.PORT || config.get('port');
+
+mongoose.connect(config.get('mongoUri'));
 
 app.use(express.json());
 app.use(morgan('tiny'));
