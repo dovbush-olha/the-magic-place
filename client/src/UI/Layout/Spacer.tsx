@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { QUERIES } from '../../constants';
+import { QUERIES } from 'services/constants';
 
 type StyledSpacerProps = {
   desktop: number;
