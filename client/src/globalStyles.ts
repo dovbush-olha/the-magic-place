@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { WEIGHT, COLORS } from './constants';
+import { WEIGHT, COLORS } from './services/constants';
 
 export const GlobalStyle = createGlobalStyle`
 
