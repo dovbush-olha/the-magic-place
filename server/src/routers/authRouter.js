@@ -2,16 +2,11 @@ const express = require('express');
 
 const router = express.Router();
 
-const {
-  createUser,
-} = require('../services/authService');
-
 router.post(
   '/login',
-  createUser,
-  // async (req, res) => {
-  //   res.json('auth login');
-  // },
+  async (req, res) => {
+    res.json('auth login');
+  },
 );
 
 router.post(
