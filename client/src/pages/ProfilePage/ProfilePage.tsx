@@ -1,3 +1,9 @@
+import { Container } from 'ui/Layout';
+
 export function ProfilePage() {
-  return <p>It is profile page</p>;
+  return (
+    <Container>
+      <p>It is profile page</p>
+    </Container>
+  );
 }

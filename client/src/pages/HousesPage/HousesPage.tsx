@@ -1,3 +1,9 @@
+import { Container } from 'ui/Layout';
+
 export function HousesPage() {
-  return <p>This is houses page</p>;
+  return (
+    <Container>
+      <p>This is houses page</p>
+    </Container>
+  );
 }
