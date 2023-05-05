@@ -1,5 +1,4 @@
-import { Button } from 'ui/Button';
-import { Spacer } from 'ui/Layout';
+import { Button, Spacer } from 'ui';
 import * as Styled from './HomePage.style';
 
 export function HomePage() {
