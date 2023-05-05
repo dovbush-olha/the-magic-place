@@ -34,7 +34,12 @@ const DISABLED = css`
   }
 `;
 
-export const Button = styled.button`
+type ButtonProps = {
+  variant?: 'primary' | 'secondary';
+  isDisabled?: boolean;
+};
+
+export const Button = styled.button<ButtonProps>`
   display: flex;
   align-items: center;
   gap: 8px;
@@ -48,5 +53,5 @@ export const Button = styled.button`
   transition: all 200ms ease-out;
 
   ${(props) => props.variant && COLOR[props.variant]}
-  ${(props) => props.disabled && DISABLED}
+  ${(props) => props.isDisabled && DISABLED}
 `;
