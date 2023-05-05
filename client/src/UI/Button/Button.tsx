@@ -1,11 +1,11 @@
-import { MouseEventHandler, ReactNode, ReactSVGElement } from 'react';
+import { ComponentProps, MouseEventHandler, ReactNode, ReactSVGElement } from 'react';
 import { ReactComponent as Icon } from 'assets/icons/house-icon.svg';
 import * as Styled from './Button.style';
 
-interface ButtonProps {
+interface ButtonProps extends ComponentProps<'button'> {
   children: ReactNode;
   type?: 'button' | 'submit';
-  onClick?: (event: MouseEventHandler<HTMLButtonElement>) => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   variant?: 'primary' | 'secondary';
   icon?: ReactSVGElement;
   isDisabled?: boolean;
@@ -13,14 +13,13 @@ interface ButtonProps {
 }
 
 export function Button(props: ButtonProps) {
-  const { children, type, onClick, variant = 'primary', icon = <Icon />, isDisabled = false, style = {} } = props;
+  const { children, type, onClick, variant, icon = <Icon />, isDisabled = false, style = {} } = props;
 
   return (
     <Styled.Button
       type={type || 'button'}
       onClick={(e) => (onClick ? onClick(e) : undefined)}
-      variant={variant}
-      icon={icon}
+      variant={variant || 'primary'}
       disabled={isDisabled}
       style={style}
     >

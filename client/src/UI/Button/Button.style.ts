@@ -16,6 +16,7 @@ const COLOR = {
       background-color: hsla(40, 43%, 49%, 0.4);
     }
   `,
+  secondary: css``,
 };
 
 const DISABLED = css`
@@ -53,5 +54,5 @@ export const Button = styled.button<ButtonProps>`
   transition: all 200ms ease-out;
 
   ${(props) => props.variant && COLOR[props.variant]}
-  ${(props) => props.isDisabled && DISABLED}
+  ${(props) => props.disabled && DISABLED}
 `;
