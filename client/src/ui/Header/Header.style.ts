@@ -26,18 +26,11 @@ export const NavbarLink = styled(NavLink)`
   color: ${COLORS.Main.Beige_100};
   font-weight: ${WEIGHT.bold};
   padding: 8px 21px;
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #ffd480 46.87%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1;
   position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    background: linear-gradient(#fff 0%, #ffd480 100%, #fff 0%);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-  }
+  z-index: 2;
 
   &.active {
     &::before {
@@ -49,8 +42,9 @@ export const NavbarLink = styled(NavLink)`
       right: 0;
       background-image: url(${Eclipse});
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: 110px;
+      background-position: center center;
+      background-size: 94px;
+      z-index: -1;
     }
   }
 `;
