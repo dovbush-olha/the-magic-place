@@ -27,6 +27,6 @@
     }
   },
   "types": ["node"],
-  "include": [".eslintrc.json", "src"],
+  "include": [".eslintrc.json", "src/**/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
