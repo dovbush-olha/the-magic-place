@@ -1,21 +1,20 @@
-import { Link } from 'react-router-dom';
+import { Container } from '../Layout';
 import * as Styled from './Header.style';
 
 export function Header() {
   return (
-    <Styled.Wrapper
-      style={{
-        display: 'flex',
-        gap: '10px',
-      }}
-    >
-      <Link to="/">Home page</Link>
-      <Link to="/research">Research page</Link>
-      <Link to="/houses">Houses page</Link>
-      <Link to="/spells">Spells page</Link>
-      <Link to="/settings">Settings page</Link>
-      <Link to="/auth">Auth page</Link>
-      <Link to="/profile">Profile page</Link>
-    </Styled.Wrapper>
+    <Container>
+      <Styled.Wrapper>
+        <Styled.NavBar>
+          <Styled.NavbarLink to="/">Home</Styled.NavbarLink>
+          <Styled.NavbarLink to="/houses">Logo</Styled.NavbarLink>
+
+          <Styled.RightNav>
+            <Styled.NavbarLink to="/profile">Profile</Styled.NavbarLink>
+            <Styled.NavbarLink to="/settings">Settings</Styled.NavbarLink>
+          </Styled.RightNav>
+        </Styled.NavBar>
+      </Styled.Wrapper>
+    </Container>
   );
 }

@@ -10,5 +10,5 @@ test('show links', () => {
     </BrowserRouter>
   );
   const links = screen.getAllByRole('link');
-  expect(links).toHaveLength(7);
+  expect(links).toHaveLength(4);
 });

@@ -11,14 +11,14 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "src",
     "paths": {
-      "ui/*": ["UI/*"],
+      "ui/*": ["ui/*"],
       "components/*": ["components/*"],
       "modules/*": ["modules/*"],
       "pages/*": ["pages/*"],
@@ -26,16 +26,12 @@
       "assets/*": ["assets/*"]
     }
   },
-  "types": ["node"],
-  "baseUrl": ".",
-  "paths": {
-    "ui/*": ["src/UI/*"],
-    "components/*": ["src/components/*"],
-    "modules/*": ["src/modules/*"],
-    "pages/*": ["src/pages/*"],
-    "constants/*": ["src/constants/*"],
-    "assets/*": ["src/assets/*"]
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
   },
-  "include": [".eslintrc.json", "src"],
+  "types": ["node"],
+  "include": [".eslintrc.json", "src/**/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
