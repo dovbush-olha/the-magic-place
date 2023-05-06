@@ -17,6 +17,6 @@ type ContainerProps = {
   size?: number;
 };
 
-export function Container({ children, size = 1080 }: ContainerProps) {
+export function StyledContainer({ children, size = 1080 }: ContainerProps) {
   return <Wrapper size={size}>{children}</Wrapper>;
 }
