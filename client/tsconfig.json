@@ -16,9 +16,14 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "*": ["./src/*"]
+      "ui/*": ["ui/*"],
+      "components/*": ["components/*"],
+      "modules/*": ["modules/*"],
+      "pages/*": ["pages/*"],
+      "services/*": ["services/*"],
+      "assets/*": ["assets/*"]
     }
   },
   "ts-node": {
