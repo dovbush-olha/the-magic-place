@@ -29,5 +29,5 @@ type StyledSpacerProps = {
 
 export function StyledSpacer({ space }: StyledSpacerProps) {
   const { desktop, tablet, mobile } = space;
-  return <StyledSpacer desktop={desktop} tablet={tablet} mobile={mobile} />;
+  return <Spacer desktop={desktop} tablet={tablet} mobile={mobile} />;
 }
