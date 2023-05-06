@@ -6,7 +6,7 @@ type WrapperProps = {
 };
 
 const Wrapper = styled.div`
-  max-width: ${({ size }: WrapperProps) => (size ? `${size}px` : '1080px')};
+  max-width: ${({ size }: WrapperProps) => `${size}px`};
 `;
 
 type ContainerProps = {
@@ -14,6 +14,6 @@ type ContainerProps = {
   size?: number;
 };
 
-export function Container({ children, size }: ContainerProps) {
+export function Container({ children, size = 1080 }: ContainerProps) {
   return <Wrapper size={size}>{children}</Wrapper>;
 }
