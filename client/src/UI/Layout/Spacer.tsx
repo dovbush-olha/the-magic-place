@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import { QUERIES } from 'services/constants';
 
-type SpacerProps = {
+type StyledSpacerProps = {
   desktop: number;
   tablet: number;
   mobile: number;
 };
 
-const Spacer = styled.div<SpacerProps>`
+const StyledSpacer = styled.div<StyledSpacerProps>`
   margin-bottom: ${({ desktop }) => `${desktop}px`};
 
   @media ${QUERIES.upToLaptop} {
@@ -23,11 +23,11 @@ const Spacer = styled.div<SpacerProps>`
   }
 `;
 
-type StyledSpacerProps = {
+type SpacerProps = {
   space: { desktop: number; tablet: number; mobile: number };
 };
 
-export function StyledSpacer({ space }: StyledSpacerProps) {
+export function Spacer({ space }: SpacerProps) {
   const { desktop, tablet, mobile } = space;
-  return <Spacer desktop={desktop} tablet={tablet} mobile={mobile} />;
+  return <StyledSpacer desktop={desktop} tablet={tablet} mobile={mobile} />;
 }

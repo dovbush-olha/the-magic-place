@@ -1,4 +1,4 @@
-import { Container } from 'ui';
+import { Container } from '../Layout';
 
 export function Footer() {
   return (
