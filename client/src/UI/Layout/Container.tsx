@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 
 type ContainerProps = {
   children: ReactNode;
-  size: number;
+  size?: number;
 };
 
 export function Container({ children, size }: ContainerProps) {
