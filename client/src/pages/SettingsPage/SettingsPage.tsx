@@ -1,3 +1,9 @@
+import { Container } from 'ui';
+
 export function SettingsPage() {
-  return <p>It is settings page</p>;
+  return (
+    <Container>
+      <p>It is settings page</p>
+    </Container>
+  );
 }
