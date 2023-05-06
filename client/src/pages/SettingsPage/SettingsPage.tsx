@@ -1,4 +1,4 @@
-import { Container } from 'ui/Layout';
+import { Container } from 'ui';
 
 export function SettingsPage() {
   return (

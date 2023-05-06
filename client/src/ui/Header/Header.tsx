@@ -1,4 +1,4 @@
-import { Container } from 'ui/Layout';
+import { Container } from 'ui';
 import * as Styled from './Header.style';
 
 export function Header() {
