@@ -1,8 +1,8 @@
-import { ComponentProps, MouseEventHandler, ReactNode, ReactSVGElement } from 'react';
+import { ButtonHTMLAttributes, ComponentProps, MouseEventHandler, ReactNode, ReactSVGElement } from 'react';
 import { ReactComponent as Icon } from 'assets/icons/house-icon.svg';
 import * as Styled from './Button.style';
 
-interface ButtonProps extends ComponentProps<'button'> {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   type?: 'button' | 'submit';
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
