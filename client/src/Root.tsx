@@ -1,15 +1,19 @@
+import { useMemo, useCallback } from 'react';
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components/macro';
-import BGImage from 'assets/images/background-image.jpg';
+
+// eslint-disable-next-line import/no-extraneous-dependencies
+import Particles from 'react-particles';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { loadStarsPreset } from 'tsparticles-preset-stars';
 import { Header, Footer } from './ui';
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-image: url(${BGImage});
-  background-repeat: no-repeat;
-  background-position: center top;
+  z-index: 1;
+  position: relative;
   width: 100%;
 `;
 
@@ -19,15 +23,53 @@ const Main = styled.main`
 `;
 
 export function Root() {
+  const options = useMemo(
+    () => ({
+      preset: 'stars',
+      background: {
+        color: '#000616',
+      },
+      particles: {
+        number: {
+          value: 2590,
+        },
+        move: {
+          enable: true,
+          direction: 'none',
+          speed: 0.08,
+          random: false,
+          straight: false,
+        },
+        color: {
+          value: '#717981',
+        },
+        collisions: {
+          enable: true,
+        },
+        size: {
+          value: { min: 0.01, max: 1.4 },
+        },
+      },
+    }),
+    []
+  );
+
+  const ParticlesInit = useCallback(async (engine) => {
+    await loadStarsPreset(engine);
+  }, []);
+
   return (
-    <Wrapper>
-      <Header />
+    <>
+      <Wrapper>
+        <Header />
 
-      <Main>
-        <Outlet />
-      </Main>
+        <Main>
+          <Outlet />
+        </Main>
 
-      <Footer />
-    </Wrapper>
+        <Footer />
+      </Wrapper>
+      <Particles options={options} init={ParticlesInit} />
+    </>
   );
 }

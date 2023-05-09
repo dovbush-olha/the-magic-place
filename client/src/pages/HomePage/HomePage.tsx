@@ -1,4 +1,5 @@
 import { Container } from 'ui';
+
 import * as Styled from './HomePage.style';
 
 export function HomePage() {
