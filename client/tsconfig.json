@@ -11,7 +11,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -26,12 +26,8 @@
       "assets/*": ["assets/*"]
     }
   },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
-  },
-  "types": ["node"],
-  "include": [".eslintrc.json", "src/**/*"],
+  "types": ["node", "jest", "@testing-library/jest-dom"],
+  "include": [".eslintrc.json", "src"],
+  "exclude": ["**/*.test.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
