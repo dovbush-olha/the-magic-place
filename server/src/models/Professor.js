@@ -8,7 +8,7 @@ const professorSchema = mongoose.Schema({
     },
     portrait: {
       type: String,
-      required: true,
+      // required: true,
     },
     subject: {
       type: String,
@@ -34,7 +34,7 @@ const professorSchema = mongoose.Schema({
     },
     portrait: {
       type: String,
-      required: true,
+      // required: true,
     },
     subject: {
       type: String,
