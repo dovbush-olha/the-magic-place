@@ -29,7 +29,7 @@ const houseTitleSchema = mongoose.Schema({
 })
 
 const House = mongoose.model('houses', houseSchema);
-const HouseTitle = mongoose.model('houseTitles', houseTitleSchema);
+const HouseTitle = mongoose.model('house_titles', houseTitleSchema);
 
 module.exports = {
   House,
