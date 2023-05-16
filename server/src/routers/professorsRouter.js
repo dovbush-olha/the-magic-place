@@ -4,7 +4,7 @@ const {
   getAllProfessors,
   getProfessorById,
   addManyProfessorsToDB,
-} = require('../services/staffService');
+} = require('../services/professorsService');
 const transformProfessorData = require('../helpers/transformProfessorsData');
 
 const router = express.Router();
@@ -84,5 +84,5 @@ router.post(
 );
 
 module.exports = {
-  staffRouter: router,
+  professorsRouter: router,
 };
