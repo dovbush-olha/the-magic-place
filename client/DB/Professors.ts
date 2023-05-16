@@ -152,16 +152,6 @@ export const ProfessorsEN: Professor[] = [
       'Proud and mystical, a centaur with deep knowledge of Divination and a unique perspective on the magical world.',
   },
   {
-    name: 'Horace Slughorn',
-    subject: 'Potions',
-    workPeriod: '1943-1981, 1996-1998',
-    interestingFact:
-      "He was known for collecting students who showed exceptional talent and potential, which he called his 'Slug Club'.",
-    portrait: '',
-    description:
-      'Sly and manipulative, a masterful potions brewer and teacher who had a soft spot for talented and ambitious students.',
-  },
-  {
     name: 'Quirinus Quirrell',
     subject: 'Defense Against the Dark Arts',
     workPeriod: '1991-1992',
