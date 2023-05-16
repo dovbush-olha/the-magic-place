@@ -1,4 +1,4 @@
-const transfromSpeelData = (spellFromResponce) => ({
+const transfromSpellData = (spellFromResponce) => ({
   id: spellFromResponce._id,
   EN: { ...spellFromResponce.EN },
   UK: { ...spellFromResponce.UK },
@@ -6,4 +6,4 @@ const transfromSpeelData = (spellFromResponce) => ({
   updatedAt: spellFromResponce.updatedAt,
 });
 
-module.exports = transfromSpeelData;
+module.exports = transfromSpellData;
