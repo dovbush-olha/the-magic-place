@@ -7,7 +7,7 @@ const cors = require('cors');
 const { authRouter } = require('./src/routers/authRouter');
 const { housesRouter } = require('./src/routers/housesRouter');
 const { spellsRouter } = require('./src/routers/spellsRouter');
-const { staffRouter } = require('./src/routers/staffRouter');
+const { professorsRouter } = require('./src/routers/professorsRouter');
 const { studentsRouter } = require('./src/routers/studentsRouter');
 
 const app = express();
@@ -22,7 +22,7 @@ app.use(cors());
 app.use('/api/auth', authRouter);
 app.use('/api/houses', housesRouter);
 app.use('/api/spells', spellsRouter);
-app.use('/api/staff', staffRouter);
+app.use('/api/professors', professorsRouter);
 app.use('/api/students', studentsRouter);
 
 (async () => {

@@ -6,6 +6,7 @@ export const COLORS = {
   Buttons: {
     Brown_100: 'hsl(40, 43%, 49%)',
     Brown_20: 'hsla(40, 43%, 49%, 0.1)',
+    Disabled: 'hsl(0,0%,80%)',
   },
   Main: {
     Beige_100: 'hsl(39, 100%, 95%)',
