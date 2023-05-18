@@ -45,6 +45,8 @@ const studentSchema = mongoose.Schema({
       required: true,
     },
   }
+}, {
+  timestamps: true,
 });
 
 const Student = mongoose.model('students', studentSchema);
