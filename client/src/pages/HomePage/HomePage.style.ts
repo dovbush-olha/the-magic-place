@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import BGImage from 'assets/images/home-page/main-image1.png';
+import BGImage from 'assets/images/home-page/main-image.png';
 import RightImage from 'assets/images/home-page/right-image.png';
 import LeftImage from 'assets/images/home-page/left-image.png';
 
