@@ -4,8 +4,15 @@ import * as Styled from './HomePage.style';
 
 export function HomePage() {
   return (
-    <Container>
-      <Styled.Wrapper>It is home page</Styled.Wrapper>
-    </Container>
+    <Styled.Background>
+      <Container>
+        <Styled.Wrapper>
+          <Styled.MainBlock>
+            <Styled.MainTop>кнопки</Styled.MainTop>
+            <Styled.MainBottom>The World That is always with you</Styled.MainBottom>
+          </Styled.MainBlock>
+        </Styled.Wrapper>
+      </Container>
+    </Styled.Background>
   );
 }

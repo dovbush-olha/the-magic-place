@@ -35,7 +35,7 @@ export function Root() {
         },
         move: {
           enable: true,
-          direction: 'none',
+          directions: 'none',
           speed: 0.08,
           random: false,
           straight: false,
@@ -54,7 +54,7 @@ export function Root() {
     []
   );
 
-  const ParticlesInit = useCallback(async (engine) => {
+  const ParticlesInit = useCallback(async (engine: any) => {
     await loadStarsPreset(engine);
   }, []);
 
