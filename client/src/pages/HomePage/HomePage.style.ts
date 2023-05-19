@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro';
 import BGImage from 'assets/images/home-page/main-image.png';
-import RightImage from 'assets/images/home-page/right-image.png';
-import LeftImage from 'assets/images/home-page/left-image.png';
+import RightImage from 'assets/images/home-page/right-image.svg';
+import LeftImage from 'assets/images/home-page/left-image.svg';
 
 export const Wrapper = styled.div`
   background-image: url(${BGImage});
@@ -18,20 +18,21 @@ export const Background = styled.div`
     position: absolute;
     content: '';
     right: 0;
-    top: 650px;
+    top: 800px;
     background-image: url(${RightImage});
     background-repeat: no-repeat;
     background-position: center top;
     width: 290px;
     height: 494px;
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: normal;
+    z-index: -1;
   }
 
   &::before {
     position: absolute;
     content: '';
     left: 0;
-    top: 600px;
+    top: 760px;
     background-image: url(${LeftImage});
     background-repeat: no-repeat;
     background-position: center top;
@@ -43,7 +44,7 @@ export const Background = styled.div`
 
 export const MainBlock = styled.div`
   min-height: 100%;
-  margin-bottom: 15%;
+  margin-bottom: 12%;
   display: flex;
   flex-direction: column;
 `;
