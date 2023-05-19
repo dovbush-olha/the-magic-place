@@ -48,3 +48,9 @@ export const NavbarLink = styled(NavLink)`
     }
   }
 `;
+
+export const LogoWrapper = styled.div`
+  margin-left: 100px;
+`;
+
+export const Logo = styled.img``;
