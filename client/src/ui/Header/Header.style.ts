@@ -4,7 +4,7 @@ import { COLORS, WEIGHT } from 'services/constants';
 import Eclipse from 'assets/images/active-link.png';
 
 export const Wrapper = styled.header`
-  height: 8rem;
+  height: 148px;
   padding: 24px 8px;
 `;
 
