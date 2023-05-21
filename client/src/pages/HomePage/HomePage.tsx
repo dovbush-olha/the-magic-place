@@ -6,8 +6,8 @@ import * as Styled from './HomePage.style';
 export function HomePage() {
   return (
     <Styled.Background>
-      <Container>
-        <Styled.Wrapper>
+      <Styled.Wrapper>
+        <Container>
           <Styled.MainBlock>
             <Styled.MainTop>
               <Button>Research</Button>
@@ -21,8 +21,8 @@ export function HomePage() {
           </Styled.MainBlock>
 
           <SpellSection />
-        </Styled.Wrapper>
-      </Container>
+        </Container>
+      </Styled.Wrapper>
     </Styled.Background>
   );
 }
