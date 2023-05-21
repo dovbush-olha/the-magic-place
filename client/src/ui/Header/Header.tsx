@@ -8,6 +8,7 @@ export function Header() {
       <Styled.Wrapper>
         <Styled.NavBar>
           <Styled.NavbarLink to="/">Home</Styled.NavbarLink>
+          <Styled.Blanc />
           <Styled.LogoWrapper>
             <Styled.Logo src={Logo} alt="Logo Icon" />
           </Styled.LogoWrapper>
