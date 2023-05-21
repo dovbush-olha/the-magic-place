@@ -20,7 +20,7 @@ export function HomePage() {
             </Styled.MainBottom>
           </Styled.MainBlock>
 
-          <Spacer space={{ desktop: 150, tablet: 150, mobile: 100 }} />
+          <Spacer space={{ desktop: 150, tablet: 140, mobile: 100 }} />
 
           <SpellSection />
         </Container>

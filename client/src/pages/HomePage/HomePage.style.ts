@@ -2,6 +2,7 @@ import styled from 'styled-components/macro';
 import BGImage from 'assets/images/home-page/main-image.png';
 import RightImage from 'assets/images/home-page/right-image.svg';
 import LeftImage from 'assets/images/home-page/left-image.svg';
+import { QUERIES } from 'services/constants';
 
 export const Background = styled.div`
   position: relative;
@@ -40,9 +41,13 @@ export const Background = styled.div`
 export const Wrapper = styled.div`
   background-image: url(${BGImage});
   background-repeat: no-repeat;
-  background-position: center top -85px;
+  background-position: center top -80px;
   background-size: contain;
   height: 900px;
+
+  @media ${QUERIES.upToTablet} {
+    background-size: cover;
+  }
 `;
 
 export const MainBlock = styled.div`
