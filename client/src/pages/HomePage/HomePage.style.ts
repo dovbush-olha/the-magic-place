@@ -3,27 +3,22 @@ import BGImage from 'assets/images/home-page/main-image.png';
 import RightImage from 'assets/images/home-page/right-image.png';
 import LeftImage from 'assets/images/home-page/left-image.png';
 
-export const Wrapper = styled.div`
-  background-image: url(${BGImage});
-  background-repeat: no-repeat;
-  background-position: center top -85px;
-  background-size: 110%;
-`;
-
 export const Background = styled.div`
   position: relative;
   width: 100%;
+  height: 100%;
 
   &::after {
     position: absolute;
     content: '';
     right: 0;
-    top: 650px;
+    bottom: 10%;
     background-image: url(${RightImage});
     background-repeat: no-repeat;
     background-position: center top;
-    width: 290px;
-    height: 494px;
+    background-size: contain;
+    height: 40%;
+    width: 20%;
     mix-blend-mode: color-dodge;
   }
 
@@ -31,18 +26,27 @@ export const Background = styled.div`
     position: absolute;
     content: '';
     left: 0;
-    top: 600px;
+    bottom: 0%;
     background-image: url(${LeftImage});
     background-repeat: no-repeat;
     background-position: center top;
-    width: 450px;
-    height: 677px;
+    background-size: cover;
+    height: 53%;
+    width: 25%;
     mix-blend-mode: color-dodge;
   }
 `;
 
-export const MainBlock = styled.div`
+export const Wrapper = styled.div`
+  background-image: url(${BGImage});
+  background-repeat: no-repeat;
+  background-position: center top -85px;
+  background-size: contain;
   min-height: 100%;
+`;
+
+export const MainBlock = styled.div`
+  height: 100%;
   margin-bottom: 15%;
   display: flex;
   flex-direction: column;

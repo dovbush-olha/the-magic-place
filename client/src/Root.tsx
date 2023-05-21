@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 
 const Main = styled.main`
   flex-grow: 1;
-  height: 100%;
+  min-height: 100%;
 `;
 
 export function Root() {

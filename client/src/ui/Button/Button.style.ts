@@ -48,7 +48,7 @@ export const Button = styled.button<ButtonProps>`
   border: 1px solid;
   border-image-slice: 1;
   text-transform: uppercase;
-  font-family: 'Gentium Book Plus';
+  font-family: 'Gentium Book Plus', serif;
   font-weight: ${WEIGHT.bold};
   cursor: pointer;
   transition: all 200ms ease-out;
