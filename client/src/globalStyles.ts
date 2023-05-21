@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import Fog from 'assets/images/home-image/fog1.png';
 import { WEIGHT, COLORS } from './services/constants';
 
 export const GlobalStyle = createGlobalStyle`
