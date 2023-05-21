@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro';
 import BGImage from 'assets/images/home-page/main-image.png';
-import RightImage from 'assets/images/home-page/right-image.png';
-import LeftImage from 'assets/images/home-page/left-image.png';
+import RightImage from 'assets/images/home-page/right-image.svg';
+import LeftImage from 'assets/images/home-page/left-image.svg';
 
 export const Background = styled.div`
   position: relative;
@@ -42,12 +42,11 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-position: center top -85px;
   background-size: contain;
-  min-height: 100%;
+  height: 900px;
 `;
 
 export const MainBlock = styled.div`
   height: 100%;
-  margin-bottom: 15%;
   display: flex;
   flex-direction: column;
 `;
@@ -63,13 +62,14 @@ export const MainTop = styled.div`
 export const MainBottom = styled.div`
   margin: 0 200px;
   padding: 48px;
-  padding-top: 45%;
+  height: 480px;
   border: 2px solid;
   border-image-source: linear-gradient(180deg, rgba(255, 246, 229, 0) 43.75%, #fff6e5 100%);
   border-image-slice: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   position: relative;
 
   &::before,
@@ -96,4 +96,6 @@ export const MainBottom = styled.div`
 
 export const Welcome = styled.h1``;
 
-export const WorldText = styled.h2``;
+export const WorldText = styled.h2`
+  text-align: center;
+`;

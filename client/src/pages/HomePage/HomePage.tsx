@@ -1,4 +1,4 @@
-import { Container, Button } from 'ui';
+import { Container, Button, Spacer } from 'ui';
 
 import { SpellSection } from 'pages/HomePage/components/SpellSection';
 import * as Styled from './HomePage.style';
@@ -19,6 +19,8 @@ export function HomePage() {
               <Styled.WorldText> The world that is always with you...</Styled.WorldText>
             </Styled.MainBottom>
           </Styled.MainBlock>
+
+          <Spacer space={{ desktop: 150, tablet: 150, mobile: 100 }} />
 
           <SpellSection />
         </Container>

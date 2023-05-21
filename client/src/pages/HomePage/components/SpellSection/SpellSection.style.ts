@@ -15,7 +15,6 @@ export const BookWrapper = styled.div`
 export const Book1 = styled.img`
   object-fit: contain;
   object-position: left 0 bottom -10px;
-  align-self: end;
   width: 210px;
 `;
 
@@ -31,5 +30,4 @@ export const CenterPart = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 48px;
 `;
