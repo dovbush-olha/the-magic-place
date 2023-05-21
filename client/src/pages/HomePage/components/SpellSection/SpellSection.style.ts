@@ -16,7 +16,7 @@ export const Book1 = styled.img`
   object-fit: contain;
   object-position: left 0 bottom -10px;
   align-self: end;
-  width: 250px;
+  width: 210px;
 `;
 
 export const Book2 = styled(Book1)`
