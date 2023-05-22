@@ -9,6 +9,7 @@ export const Figure = styled.figure`
 export const Blockquote = styled.blockquote`
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 17px;
 `;
 
 export const Figcaption = styled.figcaption`

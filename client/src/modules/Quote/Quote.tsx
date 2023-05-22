@@ -3,10 +3,12 @@ import { quotesEN } from '../../../DB/Quotes';
 import * as Styled from './Quote.style';
 
 export function Quote() {
+  const quote = getRandomQuote(quotesEN);
+
   return (
     <Styled.Figure>
-      <Styled.Blockquote>{getRandomQuote(quotesEN).text}</Styled.Blockquote>
-      <Styled.Figcaption> &copy; {getRandomQuote(quotesEN).author}</Styled.Figcaption>
+      <Styled.Blockquote>{quote.text}</Styled.Blockquote>
+      <Styled.Figcaption> &copy; {quote.author}</Styled.Figcaption>
     </Styled.Figure>
   );
 }
