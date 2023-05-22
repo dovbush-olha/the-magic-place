@@ -3,7 +3,7 @@ type Quote = {
   author: string;
 };
 
-const quotesEN: Quote[] = [
+export const quotesEN: Quote[] = [
   {
     text: "\"I hope you're pleased with yourselves. We could all have been killed — or worse, expelled. Now if you don't mind, I'm going to bed.\"",
     author: 'Hermione Granger',
@@ -126,7 +126,7 @@ const quotesEN: Quote[] = [
   },
 ];
 
-const quotesUA: Quote[] = [
+export const quotesUA: Quote[] = [
   {
     text: '"Треба бути дуже хоробрим, щоб чинити опір ворогам, але потрібна не менша хоробрість, щоб чинити опір друзям."',
     author: 'Албус Дамблдор',
