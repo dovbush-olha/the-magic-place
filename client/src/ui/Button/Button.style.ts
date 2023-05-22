@@ -44,7 +44,7 @@ export const Button = styled.button<ButtonProps>`
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 13px 37px;
+  padding: 14px 28px;
   border: 1px solid;
   border-image-slice: 1;
   text-transform: uppercase;
