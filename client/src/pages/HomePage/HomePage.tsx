@@ -4,6 +4,7 @@ import { SpellSection } from 'pages/HomePage/components/SpellSection';
 import { Quote } from 'modules/Quote';
 import { HelpForm } from 'modules/HelpForm';
 import * as Styled from './HomePage.style';
+import { ContentBlock } from './HomePage.style';
 
 export function HomePage() {
   return (
@@ -12,9 +13,23 @@ export function HomePage() {
         <Container>
           <Styled.MainBlock>
             <Styled.MainTop>
-              <Button>Research</Button>
+              <Styled.ContentBlock>
+                <Button>Research</Button>
+                <Styled.Text>
+                  Explore the world of magic with us. Meet the greatest school of witchcraft and wizardry. Learn about
+                  the unique talents of students and the outstanding achievements of professors.
+                </Styled.Text>
+              </Styled.ContentBlock>
+
               <Styled.Welcome>Welcome to Hogwarts</Styled.Welcome>
-              <Button>Houses</Button>
+
+              <Styled.ContentBlock>
+                <Button>Houses</Button>
+                <Styled.HousesText>
+                  Find the house that will become your family for the duration of your studies. The Sorting Hat will
+                  show you the way. And if you are not sure about the hat solution, you can make your choice.
+                </Styled.HousesText>
+              </Styled.ContentBlock>
             </Styled.MainTop>
 
             <Styled.MainBottom>

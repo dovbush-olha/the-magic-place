@@ -65,6 +65,19 @@ export const MainTop = styled.div`
   padding-top: 60px;
 `;
 
+export const ContentBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 160px;
+`;
+
+export const Text = styled.p``;
+
+export const HousesText = styled.p`
+  text-align: right;
+`;
+
 export const MainBottom = styled.div`
   margin: 0 150px;
   padding: 48px 80px;

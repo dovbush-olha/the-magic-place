@@ -28,7 +28,6 @@ export const NavbarLink = styled(NavLink)`
   justify-content: center;
   font-family: 'Gentium Book Plus', serif;
   line-height: 1.5rem;
-  color: ${COLORS.Main.Beige_100};
   font-weight: ${WEIGHT.bold};
   padding: 5.5px 0;
   border-bottom: 1px solid;
