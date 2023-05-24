@@ -68,6 +68,6 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: ${WEIGHT.medium};
     -webkit-font-smoothing: antialiased;
     background-color: ${COLORS.Background.DarkBlue};
-    color: ${COLORS.Main.Beige_100};
+    color: ${COLORS.Text.Beige};
   }
 `;

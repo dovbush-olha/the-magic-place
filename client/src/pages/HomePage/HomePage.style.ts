@@ -2,7 +2,7 @@ import styled from 'styled-components/macro';
 import BGImage from 'assets/images/home-page/main-image.png';
 import RightImage from 'assets/images/home-page/right-image.svg';
 import LeftImage from 'assets/images/home-page/left-image.svg';
-import { QUERIES } from 'services/constants';
+import { QUERIES, WEIGHT } from 'services/constants';
 
 export const Background = styled.div`
   position: relative;
@@ -43,7 +43,7 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-position: center top -80px;
   background-size: contain;
-  max-height: 900px;
+  max-height: 1030px;
   height: 100%;
 
   @media ${QUERIES.upToTablet} {
@@ -66,9 +66,9 @@ export const MainTop = styled.div`
 `;
 
 export const MainBottom = styled.div`
-  margin: 0 200px;
-  padding: 48px;
-  height: 480px;
+  margin: 0 150px;
+  padding: 48px 80px;
+  height: 570px;
   border: 2px solid;
   border-image-source: linear-gradient(180deg, rgba(255, 246, 229, 0) 43.75%, #fff6e5 100%);
   border-image-slice: 1;
@@ -104,6 +104,11 @@ export const Welcome = styled.h1``;
 
 export const WorldText = styled.h2`
   text-align: center;
+  font-family: 'Comforter', cursive;
+  font-weight: ${WEIGHT.regular};
+  font-size: 52px;
+  letter-spacing: 0.06em;
+  text-shadow: 0 4px 12px #010c1a;
 `;
 
 export const HelpSection = styled.div`
