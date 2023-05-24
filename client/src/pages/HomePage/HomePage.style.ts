@@ -43,7 +43,8 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-position: center top -80px;
   background-size: contain;
-  height: 900px;
+  max-height: 900px;
+  height: 100%;
 
   @media ${QUERIES.upToTablet} {
     background-size: cover;
@@ -103,4 +104,11 @@ export const Welcome = styled.h1``;
 
 export const WorldText = styled.h2`
   text-align: center;
+`;
+
+export const HelpSection = styled.div`
+  max-width: 360px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
 `;
