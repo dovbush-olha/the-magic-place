@@ -5,7 +5,9 @@ const COLOR = {
   primary: css`
     color: ${COLORS.Buttons.Brown_100};
     background-color: ${COLORS.Buttons.Brown_20};
-    border-image-source: linear-gradient(to right, ${COLORS.Buttons.Brown_100}, #ffd480);
+    border: 1px solid;
+    border-image-source: linear-gradient(94.84deg, #a78047 -0.28%, #a78047 -0.27%, #fff5e5 99.72%);
+    border-image-slice: 1;
 
     &:hover,
     &:active {

@@ -80,8 +80,8 @@ export const HousesText = styled.p`
 
 export const MainBottom = styled.div`
   margin: 0 150px;
-  padding: 48px 80px;
-  height: 570px;
+  padding: 48px 5%;
+  height: 380px;
   border: 2px solid;
   border-image-source: linear-gradient(180deg, rgba(255, 246, 229, 0) 43.75%, #fff6e5 100%);
   border-image-slice: 1;

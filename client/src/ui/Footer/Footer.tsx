@@ -46,7 +46,7 @@ export function Footer() {
             <Styled.Text>Cookies</Styled.Text>
           </Styled.AboutUs>
 
-          <Styled.CopyRight>Harry Potter</Styled.CopyRight>
+          <Styled.CopyRight>&copy; Harry Potter UA</Styled.CopyRight>
         </Styled.Content>
       </Container>
     </Styled.Wrapper>
