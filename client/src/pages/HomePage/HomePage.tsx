@@ -2,6 +2,7 @@ import { Container, Button, Spacer } from 'ui';
 
 import { SpellSection } from 'pages/HomePage/components/SpellSection';
 import { Quote } from 'modules/Quote';
+import { HelpForm } from 'modules/HelpForm';
 import * as Styled from './HomePage.style';
 
 export function HomePage() {
@@ -27,6 +28,11 @@ export function HomePage() {
           <Spacer space={{ desktop: 48, tablet: 36, mobile: 30 }} />
 
           <Quote />
+          <Spacer space={{ desktop: 220, tablet: 200, mobile: 100 }} />
+
+          <Styled.HelpSection>
+            <HelpForm />
+          </Styled.HelpSection>
         </Container>
       </Styled.Wrapper>
     </Styled.Background>

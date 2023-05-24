@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   z-index: 1;
   position: relative;
   width: 100%;
-  min-height: 1300px;
+  min-height: 1400px;
   overflow: auto;
 `;
 

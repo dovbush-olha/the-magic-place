@@ -1,16 +1,21 @@
 export const COLORS = {
   Background: {
-    DarkBlue: 'hsl(224, 100%, 4%)',
+    DarkBlue: '#000616',
     DarkBlue_20: 'hsla(0, 0%, 0%, 0.2)',
   },
   Buttons: {
-    Brown_100: 'hsl(40, 43%, 49%)',
+    Brown_100: '#b38f47',
     Brown_20: 'hsla(40, 43%, 49%, 0.1)',
     Disabled: 'hsl(0,0%,80%)',
   },
   Main: {
-    Beige_100: 'hsl(39, 100%, 95%)',
+    Beige_100: '#fff6e6',
     Beige_20: 'hsla(39, 100%, 95%, 0.2)',
+  },
+  Text: {
+    Beige: '#e6d4b7',
+    Light_Beige: '#fff5e6',
+    Blue: '#99b4ff',
   },
 };
 
