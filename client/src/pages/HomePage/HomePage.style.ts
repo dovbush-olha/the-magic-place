@@ -113,7 +113,16 @@ export const MainBottom = styled.div`
   }
 `;
 
-export const Welcome = styled.h1``;
+export const Welcome = styled.h1`
+  font-family: 'Harry Potter';
+  font-weight: 400;
+  text-shadow: 0 4px 10px #010c19;
+  font-size: 40px;
+  line-height: 46px;
+  text-transform: uppercase;
+  align-self: start;
+  margin-top: 5px;
+`;
 
 export const WorldText = styled.h2`
   text-align: center;
