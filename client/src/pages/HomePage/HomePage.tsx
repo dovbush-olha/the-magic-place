@@ -1,6 +1,7 @@
 import { Container, Button, Spacer } from 'ui';
 
 import { SpellSection } from 'pages/HomePage/components/SpellSection';
+import { Quote } from 'modules/Quote';
 import * as Styled from './HomePage.style';
 
 export function HomePage() {
@@ -23,6 +24,9 @@ export function HomePage() {
           <Spacer space={{ desktop: 150, tablet: 140, mobile: 100 }} />
 
           <SpellSection />
+          <Spacer space={{ desktop: 48, tablet: 36, mobile: 30 }} />
+
+          <Quote />
         </Container>
       </Styled.Wrapper>
     </Styled.Background>
