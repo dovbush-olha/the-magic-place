@@ -79,4 +79,5 @@ export const CopyRight = styled(Title)`
   flex: 1 1 15%;
   display: flex;
   align-items: center;
+  font-family: 'Harry Potter';
 `;

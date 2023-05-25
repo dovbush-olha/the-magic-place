@@ -1,7 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
+import harry from 'assets/fonts/HarryPotter.woff2';
+import harry_ttf from 'assets/fonts/HarryPotter.ttf';
 import { WEIGHT, COLORS } from './services/constants';
 
 export const GlobalStyle = createGlobalStyle`
+  
+  @font-face {
+    font-family: "Harry Potter";
+    src: url(${harry}) format('woff2'),
+         url(${harry_ttf}) format('ttf');
+  }
 
   html {
     --14px: 0.875rem;
@@ -68,6 +76,6 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: ${WEIGHT.medium};
     -webkit-font-smoothing: antialiased;
     background-color: ${COLORS.Background.DarkBlue};
-    color: ${COLORS.Main.Beige_100};
+    color: ${COLORS.Text.Beige};
   }
 `;

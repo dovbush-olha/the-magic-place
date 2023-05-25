@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro';
 import { ReactNode } from 'react';
 
-const containerWidth = window.innerWidth < 1440 ? '1160px' : '80vw';
+const containerWidth = window.innerWidth < 1441 ? '1160px' : '80vw';
 
 const Wrapper = styled.div`
   max-width: ${containerWidth};
