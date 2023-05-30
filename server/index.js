@@ -1,7 +1,7 @@
+require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-const config = require('config');
 const cors = require('cors');
 
 const { authRouter } = require('./src/routers/authRouter');
@@ -11,9 +11,10 @@ const { professorsRouter } = require('./src/routers/professorsRouter');
 const { studentsRouter } = require('./src/routers/studentsRouter');
 
 const app = express();
-const PORT = process.env.PORT || config.get('port');
+const PORT = process.env.PORT;
+const DB_URL = process.env.MONGO_URI;
 
-mongoose.connect(config.get('mongoUri'));
+mongoose.connect(DB_URL);
 
 app.use(express.json());
 app.use(morgan('tiny'));
@@ -27,7 +28,9 @@ app.use('/api/students', studentsRouter);
 
 (async () => {
   try {
-    app.listen(PORT);
+    app.listen(PORT, () => {
+      console.log(`Server running at ${PORT}`);
+    });
   } catch (err) {
     console.error(`Error on server startup: ${err.message}`);
   }
