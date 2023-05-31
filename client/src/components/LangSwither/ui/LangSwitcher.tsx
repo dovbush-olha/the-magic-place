@@ -7,7 +7,7 @@ export const LangSwitcher = memo(function LangSwitcher() {
   const { i18n } = useTranslation();
 
   const onLanguageChange = useCallback(
-    function () {
+    function onLanguageChange() {
       i18n.changeLanguage(i18n.language === 'en' ? 'ua' : 'en');
     },
     [i18n]

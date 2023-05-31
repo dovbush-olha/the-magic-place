@@ -2,9 +2,7 @@ import { useMemo, useCallback } from 'react';
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components/macro';
 
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Particles from 'react-particles';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { loadStarsPreset } from 'tsparticles-preset-stars';
 import { Header, Footer } from '../shared/ui';
 
