@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { COLORS } from 'services/constants';
+import { COLORS } from '../../shared/services/constants';
 
 export const Wrapper = styled.form`
   position: relative;

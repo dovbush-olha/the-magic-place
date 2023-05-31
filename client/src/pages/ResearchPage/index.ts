@@ -1,1 +1,1 @@
-export { ResearchPage } from './ResearchPage';
+export { ResearchPageAsync as ResearchPage } from './ResearchPage.async';

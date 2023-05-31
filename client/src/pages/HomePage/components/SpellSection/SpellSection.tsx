@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
-import { Button } from 'ui/Button';
-import { ReactComponent as Icon } from 'assets/icons/spell-icon.svg';
-import Book1 from 'assets/images/home-page/spellbook1.png';
-import Book2 from 'assets/images/home-page/spellbook2.png';
-import Book3 from 'assets/images/home-page/spellbook3.png';
+import { Button } from '../../../../shared/ui/Button';
+import { ReactComponent as Icon } from '../../../../shared/assets/icons/spell-icon.svg';
+import Book1 from '../../../../shared/assets/images/home-page/spellbook1.png';
+import Book2 from '../../../../shared/assets/images/home-page/spellbook2.png';
+import Book3 from '../../../../shared/assets/images/home-page/spellbook3.png';
 import * as Styled from './SpellSection.style';
 
 export function SpellSection() {

@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
 import { NavLink } from 'react-router-dom';
-import { COLORS, WEIGHT } from 'services/constants';
+import { COLORS, WEIGHT } from '../../services/constants';
 
 export const Wrapper = styled.header`
   height: 148px;

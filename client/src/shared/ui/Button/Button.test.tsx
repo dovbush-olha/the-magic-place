@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { it, describe, expect, vi } from 'vitest';
-import { COLORS } from 'services/constants';
-import { Button } from 'ui/Button/Button';
+import { COLORS } from '../../services/constants';
+import { Button } from './Button';
 
 const onButtonClick = vi.fn();
 

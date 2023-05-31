@@ -1,1 +1,1 @@
-export { SettingsPage } from './SettingsPage';
+export { SettingsPageAsync as SettingsPage } from './SettingsPage.async';

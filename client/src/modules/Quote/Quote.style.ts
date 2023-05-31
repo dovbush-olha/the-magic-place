@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { WEIGHT } from 'services/constants';
+import { WEIGHT } from '../../shared/services/constants';
 
 export const Figure = styled.figure`
   max-width: 653px;

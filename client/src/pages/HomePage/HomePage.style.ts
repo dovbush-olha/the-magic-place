@@ -1,8 +1,8 @@
 import styled from 'styled-components/macro';
-import BGImage from 'assets/images/home-page/main-image.png';
-import RightImage from 'assets/images/home-page/right-image.svg';
-import LeftImage from 'assets/images/home-page/left-image.svg';
-import { QUERIES, WEIGHT } from 'services/constants';
+import BGImage from '../../shared/assets/images/home-page/main-image.png';
+import RightImage from '../../shared/assets/images/home-page/right-image.svg';
+import LeftImage from '../../shared/assets/images/home-page/left-image.svg';
+import { QUERIES, WEIGHT } from '../../shared/services/constants';
 
 export const Background = styled.div`
   position: relative;

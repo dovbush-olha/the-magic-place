@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { QUERIES } from 'services/constants';
+import { QUERIES } from '../../../../shared/services/constants';
 
 export const Wrapper = styled.section`
   width: 100%;

@@ -8,12 +8,10 @@ export default defineConfig({
   plugins: [react(), macrosPlugin(), svgr()],
   resolve: {
     alias: {
-      ui: '/src/ui',
-      components: '/src/components',
+      app: '/src/app',
       modules: '/src/modules',
       pages: '/src/pages',
-      services: '/src/services',
-      assets: '/src/assets',
+      shared: '/src/shared',
     },
   },
 });

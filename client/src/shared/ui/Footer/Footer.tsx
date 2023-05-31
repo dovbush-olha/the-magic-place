@@ -1,7 +1,7 @@
-import Slogan from 'assets/icons/slogan.png';
 import { Link } from 'react-router-dom';
-import { ReactComponent as LinkedIn } from 'assets/icons/linkedin-icon.svg';
-import { ReactComponent as Facebook } from 'assets/icons/facebook-icon.svg';
+import Slogan from '../../assets/icons/slogan.png';
+import { ReactComponent as LinkedIn } from '../../assets/icons/linkedin-icon.svg';
+import { ReactComponent as Facebook } from '../../assets/icons/facebook-icon.svg';
 import { Container } from '../Layout';
 
 import * as Styled from './Footer.style';

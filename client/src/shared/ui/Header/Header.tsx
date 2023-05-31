@@ -1,4 +1,4 @@
-import Logo from 'assets/icons/logo-icon.png';
+import Logo from '../../assets/icons/logo-icon.png';
 import { Container } from '../Layout';
 import * as Styled from './Header.style';
 

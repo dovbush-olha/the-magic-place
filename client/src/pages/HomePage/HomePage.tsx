@@ -1,10 +1,9 @@
-import { Container, Button, Spacer } from 'ui';
+import { Container, Button, Spacer } from 'shared/ui';
 
 import { SpellSection } from 'pages/HomePage/components/SpellSection';
 import { Quote } from 'modules/Quote';
 import { HelpForm } from 'modules/HelpForm';
 import * as Styled from './HomePage.style';
-import { ContentBlock } from './HomePage.style';
 
 export function HomePage() {
   return (
