@@ -6,8 +6,7 @@ const {
   addHouseToDb,
   addHouseTitlesToDb,
 } = require('../services/housesService');
-
-const HOUSE_NAMES = ['Gryffindor', 'Slytherin', 'Hufflepuff', 'Ravenclaw'];
+const { HOUSE_NAMES } = require('../constants');
 
 const router = express.Router();
 
@@ -23,7 +22,7 @@ router.get(
 
       res.json(houseData);
     } catch (e) {
-      res.status(404).json({ message: e.message });
+      res.status(500).json({ message: e.message });
     }
   },
 );

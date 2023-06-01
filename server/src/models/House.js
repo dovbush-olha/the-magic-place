@@ -9,6 +9,8 @@ const houseSchema = mongoose.Schema({
     type: String,
     // required: true,
   },
+}, {
+  timestamps: true,
 });
 
 const houseTitleSchema = mongoose.Schema({

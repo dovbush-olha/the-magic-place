@@ -1,4 +1,4 @@
-const transformHouseData = require('../helpers/transformHoseData');
+const transformHouseData = require('../helpers/transformHouseData');
 const transformHouseTitleData = require('../helpers/transformHouseTitleData');
 const {
   House,
