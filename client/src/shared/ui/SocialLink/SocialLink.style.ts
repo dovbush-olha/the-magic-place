@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
-import { COLORS } from 'services/constants';
+import { COLORS } from 'shared/services/constants';
 
 export const Wrapper = styled(Link)`
   display: block;
