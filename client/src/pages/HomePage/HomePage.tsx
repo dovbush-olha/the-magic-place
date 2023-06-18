@@ -3,6 +3,7 @@ import { Container, Button, Spacer } from 'shared/ui';
 import { SpellSection } from 'pages/HomePage/components/SpellSection';
 import { Quote } from 'modules/Quote';
 import { HelpForm } from 'modules/HelpForm';
+import { SocialLinkList } from 'pages/HomePage/components/SocialLinkList';
 import * as Styled from './HomePage.style';
 
 export function HomePage() {
@@ -33,6 +34,7 @@ export function HomePage() {
 
             <Styled.MainBottom>
               <Styled.WorldText> The world that is always with you...</Styled.WorldText>
+              <SocialLinkList />
             </Styled.MainBottom>
           </Styled.MainBlock>
 
