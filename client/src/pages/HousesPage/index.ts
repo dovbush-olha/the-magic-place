@@ -1,1 +1,1 @@
-export { HousesPage } from './HousesPage';
+export { HousesPageAsync as HousesPage } from './HousesPage.async';

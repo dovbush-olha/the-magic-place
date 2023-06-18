@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { COLORS, WEIGHT } from 'services/constants';
+import { COLORS, WEIGHT } from '../../services/constants';
 
 export const Wrapper = styled.footer`
   background-color: ${COLORS.Background.DarkBlue};

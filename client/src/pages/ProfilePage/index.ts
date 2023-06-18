@@ -1,1 +1,1 @@
-export { ProfilePage } from './ProfilePage';
+export { ProfilePageAsync as ProfilePage } from './ProfilePage.async';

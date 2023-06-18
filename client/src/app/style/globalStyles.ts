@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-import harry from 'assets/fonts/HarryPotter.woff2';
-import harry_ttf from 'assets/fonts/HarryPotter.ttf';
-import { WEIGHT, COLORS } from './services/constants';
+import harry from '../../shared/assets/fonts/HarryPotter.woff2';
+import harry_ttf from '../../shared/assets/fonts/HarryPotter.ttf';
+import { WEIGHT, COLORS } from '../../shared/services/constants';
 
 export const GlobalStyle = createGlobalStyle`
   

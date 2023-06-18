@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components/macro';
-import { COLORS, WEIGHT } from 'services/constants';
+import { COLORS, WEIGHT } from '../../services/constants';
 
 const COLOR = {
   primary: css`

@@ -18,12 +18,11 @@
     "jsx": "react-jsx",
     "baseUrl": "src",
     "paths": {
-      "ui/*": ["ui/*"],
-      "components/*": ["components/*"],
+      "shared/*": ["shared/*"],
       "modules/*": ["modules/*"],
+      "components/*": ["components/*"],
       "pages/*": ["pages/*"],
-      "services/*": ["services/*"],
-      "assets/*": ["assets/*"]
+      "app/*": ["app/*"]
     }
   },
   "types": ["node", "jest", "@testing-library/jest-dom"],

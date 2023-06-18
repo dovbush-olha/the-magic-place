@@ -1,8 +1,8 @@
 import styled from 'styled-components/macro';
-import { SocialLink } from 'ui/SocialLink';
-import { ReactComponent as FacebookIcon } from 'assets/icons/facebook-plain.svg';
-import { ReactComponent as LinkedinIcon } from 'assets/icons/linkedin-plain.svg';
-import { ReactComponent as BehanceIcon } from 'assets/icons/behance-icon.svg';
+import { SocialLink } from 'shared/ui/SocialLink';
+import { ReactComponent as FacebookIcon } from 'shared/assets/icons/facebook-plain.svg';
+import { ReactComponent as LinkedinIcon } from 'shared/assets/icons/linkedin-plain.svg';
+import { ReactComponent as BehanceIcon } from 'shared/assets/icons/behance-icon.svg';
 
 const Wrapper = styled.div`
   position: absolute;

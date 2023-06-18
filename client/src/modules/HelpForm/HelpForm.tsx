@@ -1,4 +1,4 @@
-import OwlImage from 'assets/images/home-page/owl-with-letter.png';
+import OwlImage from '../../shared/assets/images/home-page/owl-with-letter.png';
 import * as Styled from './HelpForm.style';
 
 export function HelpForm() {

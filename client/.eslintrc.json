@@ -20,7 +20,7 @@
     "project": ["tsconfig.eslint.json"]
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
-  "ignorePatterns": [".eslintrc.json", "DB/", "*.json", "src/assets"],
+  "ignorePatterns": [".eslintrc.json", "DB/", "*.json", "src/shared/assets"],
   "rules": {
     "react/jsx-uses-react": ["off"],
     "react/require-default-props": "off",
@@ -30,6 +30,7 @@
     "react/jsx-props-no-spreading": ["off"],
     "import/prefer-default-export": "off",
     "no-shadow": "off",
+    "import/no-extraneous-dependencies": "off",
     "prettier/prettier": [
       "error",
       {

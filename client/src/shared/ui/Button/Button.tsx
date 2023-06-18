@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react';
-import { ReactComponent as Icon } from 'assets/icons/house-icon.svg';
+import { ReactComponent as Icon } from 'shared/assets/icons/house-icon.svg';
 import * as Styled from './Button.style';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

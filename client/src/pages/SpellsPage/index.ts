@@ -1,1 +1,1 @@
-export { SpellsPage } from './SpellsPage';
+export { SpellsPageAsync as SpellsPage } from './SpellsPage.async';

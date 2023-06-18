@@ -1,4 +1,4 @@
-import { Container, Button, Spacer } from 'ui';
+import { Container, Button, Spacer } from 'shared/ui';
 
 import { SpellSection } from 'pages/HomePage/components/SpellSection';
 import { Quote } from 'modules/Quote';
