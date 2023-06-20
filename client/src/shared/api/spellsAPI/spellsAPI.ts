@@ -1,28 +1,28 @@
 import { AxiosResponse } from 'axios';
 import { basicConfig } from '../basicConfig';
-import { FetchedProfessor } from './types/types';
+import { FetchedSpell } from './types/types';
 
-export const professorsAPI = {
-  getProfessors(): Promise<FetchedProfessor[]> {
+export const spellsAPI = {
+  getSpells(): Promise<FetchedSpell[]> {
     const options = {
       method: 'GET',
       headers: { 'content-type': 'application/json' },
     };
 
     return basicConfig
-      .createRequest('/professors', options)
+      .createRequest('/spells', options)
       .then((res: AxiosResponse) => res.data)
       .catch((error: Error) => Promise.reject(error));
   },
 
-  getProfessor(id: string): Promise<FetchedProfessor> {
+  getSpell(id: string): Promise<FetchedSpell> {
     const options = {
       method: 'GET',
       headers: { 'content-type': 'application/json' },
     };
 
     return basicConfig
-      .createRequest(`/professors/${id}`, options)
+      .createRequest(`/spells/${id}`, options)
       .then((res: AxiosResponse) => res.data)
       .catch((error: Error) => Promise.reject(error));
   },

@@ -1,9 +1,9 @@
 import { AxiosResponse } from 'axios';
-import { FetchedStudent } from 'shared/api/studentsAPI/types/types';
+import { FetchedStudent } from './types/types';
 import { basicConfig } from '../basicConfig';
 
 export const studentsAPI = {
-  getStudents(): AxiosResponse<FetchedStudent[]> {
+  getStudents(): Promise<FetchedStudent[]> {
     const options = {
       method: 'GET',
       headers: { 'content-type': 'application/json' },
@@ -11,21 +11,29 @@ export const studentsAPI = {
     return basicConfig
       .createRequest('/students', options)
       .then((res: AxiosResponse) => res.data)
-      .catch((error) => Promise.reject(error));
+      .catch((error: Error) => Promise.reject(error));
   },
 
-  getStudent(id): Promise<FetchedStudent> {
-    const params = { id };
+  getStudent(id: string): Promise<FetchedStudent> {
+    const options = {
+      method: 'GET',
+      headers: { 'content-type': 'application/json' },
+    };
     return basicConfig
-      .createRequest('/student/', ['GET', { 'content-type': 'application/json' }, params])
-      .then((res) => res.data)
-      .catch((error) => Promise.reject(error));
+      .createRequest(`/students/${id}`, options)
+      .then((res: AxiosResponse) => res.data)
+      .catch((error: Error) => Promise.reject(error));
   },
 
-  createStudents(data): Promise<FetchedStudent[]> {
+  createStudents(data: FetchedStudent[]): Promise<FetchedStudent[]> {
+    const options = {
+      method: 'GET',
+      headers: { 'content-type': 'application/json' },
+      data,
+    };
     return basicConfig
-      .createRequest('/students/createMany', ['POST', { 'content-type': 'application/json' }, undefined, data])
-      .then((res) => res.data)
-      .catch((error) => Promise.reject(error));
+      .createRequest('/students/createMany', options)
+      .then((res: AxiosResponse) => res.data)
+      .catch((error: Error) => Promise.reject(error));
   },
 };

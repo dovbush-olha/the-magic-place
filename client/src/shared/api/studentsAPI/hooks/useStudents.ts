@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { studentsAPI } from 'shared/api/studentsAPI/studentsAPI';
+import { studentsAPI } from '../studentsAPI';
 
 export function useStudents() {
   const {

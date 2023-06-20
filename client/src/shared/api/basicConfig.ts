@@ -12,7 +12,7 @@ interface Options<D = any> extends AxiosRequestConfig {
 interface BasicConfig {
   apiBase: string;
   isRefreshing: boolean;
-  createRequest(endpoint: string, rest: Options);
+  createRequest(endpoint: string, rest: Options): any;
   createOptions(rest: Options): AxiosRequestConfig;
 }
 
@@ -22,10 +22,10 @@ export const basicConfig: BasicConfig = {
   apiBase: `${API_BASE}/api`,
   isRefreshing: false,
 
-  async createRequest<T>(endpoint, rest): Promise<T> {
+  async createRequest(endpoint, rest) {
     const options = this.createOptions(rest);
 
-    return axios<T>(this.apiBase + endpoint, options);
+    return axios(this.apiBase + endpoint, options);
   },
 
   createOptions(rest) {

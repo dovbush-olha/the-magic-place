@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { professorsAPI } from 'shared/api/professorsAPI/professorsAPI';
+import { professorsAPI } from '../professorsAPI';
 
 export function useProfessors() {
   const {

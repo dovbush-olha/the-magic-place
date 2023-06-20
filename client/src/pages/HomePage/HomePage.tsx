@@ -4,20 +4,9 @@ import { SpellSection } from 'pages/HomePage/components/SpellSection';
 import { Quote } from 'modules/Quote';
 import { HelpForm } from 'modules/HelpForm';
 import { SocialLinkList } from 'pages/HomePage/components/SocialLinkList';
-import { useStudents } from 'shared/api/studentsAPI';
 import * as Styled from './HomePage.style';
 
 export function HomePage() {
-  const { students, isLoading, isError } = useStudents();
-  if (isLoading) {
-    return <p>Loading...</p>;
-  }
-
-  if (isError) {
-    return <p>Something went wrong</p>;
-  }
-
-  console.log(students);
   return (
     <Styled.Background>
       <Styled.Wrapper>
