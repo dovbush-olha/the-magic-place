@@ -8,9 +8,13 @@ import { useStudents } from 'shared/api/studentsAPI';
 import * as Styled from './HomePage.style';
 
 export function HomePage() {
-  const { students, isLoading } = useStudents();
+  const { students, isLoading, isError } = useStudents();
   if (isLoading) {
     return <p>Loading...</p>;
+  }
+
+  if (isError) {
+    return <p>Something went wrong</p>;
   }
 
   console.log(students);

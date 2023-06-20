@@ -5,7 +5,7 @@ export const professorsAPI = {
   getProfessors(): Promise<FetchedProfessor[]> {
     return basicConfig
       .createRequest('/professors', ['GET', { 'content-type': 'application/json' }])
-      .then((res) => res.data.data)
+      .then((res) => res.data)
       .catch((error) => Promise.reject(error));
   },
 
@@ -13,7 +13,7 @@ export const professorsAPI = {
     const params = { id };
     return basicConfig
       .createRequest('/professors', ['GET', { 'content-type': 'application/json' }, params])
-      .then((res) => res.data.data)
+      .then((res) => res.data)
       .catch((error) => Promise.reject(error));
   },
 };
