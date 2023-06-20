@@ -1,15 +1,15 @@
 import { useQuery } from '@tanstack/react-query';
 import { studentsAPI } from 'shared/api/studentsAPI/studentsAPI';
 
-export function useStudents() {
+export function useStudent(id) {
   const {
-    data: students,
+    data: student,
     isLoading,
     isError,
   } = useQuery({
-    queryKey: ['/students'],
-    queryFn: studentsAPI.getStudents,
+    queryKey: ['student', id],
+    queryFn: studentsAPI.getStudent,
   });
 
-  return { students, isError, isLoading };
+  return { student, isError, isLoading };
 }

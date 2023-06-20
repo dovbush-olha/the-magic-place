@@ -3,7 +3,7 @@ import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 interface BasicConfig {
   apiBase: string;
   isRefreshing: boolean;
-  createRequest(endpoint: string, ...rest: any[]): Promise<AxiosResponse>;
+  createRequest(endpoint: string, ...rest: any[]);
   createOptions(rest: any[]): AxiosRequestConfig;
 }
 
@@ -11,7 +11,7 @@ export const basicConfig: BasicConfig = {
   apiBase: 'http://localhost:8080',
   isRefreshing: false,
 
-  async createRequest(endpoint, ...rest) {
+  async createRequest<T>(endpoint, ...rest): Promise<T> {
     const options = this.createOptions(rest);
 
     return axios(this.apiBase + endpoint, options);
