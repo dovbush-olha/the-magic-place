@@ -9,9 +9,5 @@
   "devDependencies": {
     "concurrently": "^8.0.1",
     "husky": "^8.0.3"
-  },
-  "dependencies": {
-    "@tanstack/react-query": "^4.29.18",
-    "@tanstack/react-query-devtools": "^4.29.18"
   }
 }

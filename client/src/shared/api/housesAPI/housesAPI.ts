@@ -15,14 +15,14 @@ export const housesAPI = {
       .catch((error: Error) => Promise.reject(error));
   },
 
-  getHouse(id: string): Promise<FetchedHouse> {
+  getHouse(name: string): Promise<FetchedHouse> {
     const options = {
       method: 'GET',
       headers: { 'content-type': 'application/json' },
     };
 
     return basicConfig
-      .createRequest(`/houses/${id}`, options)
+      .createRequest(`/houses/${name}`, options)
       .then((res: AxiosResponse) => res.data)
       .catch((error: Error) => Promise.reject(error));
   },
