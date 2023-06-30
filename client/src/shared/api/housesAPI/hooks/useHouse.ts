@@ -1,14 +1,14 @@
 import { useQuery } from '@tanstack/react-query';
 import { housesAPI } from '../housesAPI';
 
-export function useHouse(id: string) {
+export function useHouse(name: string) {
   const {
     data: house,
     isLoading,
     isError,
   } = useQuery({
-    queryKey: ['house', id],
-    queryFn: () => housesAPI.getHouse(id),
+    queryKey: ['house', name],
+    queryFn: () => housesAPI.getHouse(name),
   });
 
   return { house, isError, isLoading };
