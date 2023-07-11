@@ -6,6 +6,7 @@ import { HousesPage } from 'pages/HousesPage';
 import { SpellsPage } from 'pages/SpellsPage';
 import { ProfilePage } from 'pages/ProfilePage';
 import { SettingsPage } from 'pages/SettingsPage';
+import { ErrorBoundaryComponent } from 'components/ErrorBoundaryComponent';
 import { Root } from '../../Root';
 
 export const routes = createBrowserRouter([
@@ -20,7 +21,11 @@ export const routes = createBrowserRouter([
       },
       {
         path: 'houses',
-        element: <HousesPage />,
+        element: (
+          <ErrorBoundaryComponent>
+            <HousesPage />
+          </ErrorBoundaryComponent>
+        ),
       },
       {
         path: 'spells',
